@@ -1,0 +1,187 @@
+main {
+    border-bottom: 0;
+
+    .title {
+        background-image: url('./images/divonne.jpg');
+    }
+
+    .parcours {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+
+        .post-bac,
+        .bac {
+            border-radius: 5px;
+            border: 2px solid #3A3F50;
+            width: 100%;
+            height: 250px;
+            margin-bottom: 50px;
+
+            &.bac {
+                height: 125px;
+                margin: 0;
+            }
+
+
+            .experience {
+                height: 50%;
+                display: flex;
+                align-items: center;
+
+                &.border {
+                    border-bottom: 2px solid #3A3F50;
+                }
+
+                &.bot {
+                    height: 100%;
+                }
+
+                .titre {
+                    height: 100%;
+                    width: 25%;
+                    border-right: 2px solid #3A3F50;
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-left: 15px;
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+
+                    h4 {
+                        font-size: 14px;
+                    }
+                }
+
+                .skill {
+                    margin-left: 50px;
+                    font-size: 18px;
+                    font-weight: bold;
+
+                    span {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#second {
+    margin-top: 100px;
+
+    .text-container {
+        margin-bottom: 50px;
+        h3 {
+            font-size: 30px;
+            font-family: 'Maragsa';
+            margin-bottom: 30px;
+        }
+    
+        p {
+            width: 80%;
+            margin-bottom: 100px;
+        }
+    
+        h2 {
+            font-family: 'Maragsa';
+            ;
+            font-size: 60px;
+            position: relative;
+    
+            &::after {
+                content: "";
+                width: 100%;
+                height: 3px;
+                background-color: #3A3F50;
+                position: absolute;
+                left: calc(10% + 200px);
+                top: calc(50%)
+            }
+        }
+    }
+
+    .bac {
+        border-radius: 5px;
+        border: 2px solid #3A3F50;
+        width: 100%;
+        height: 125px;
+        margin-bottom: 25px;
+
+        .experience {
+            height: 50%;
+            display: flex;
+            align-items: center;
+
+            &.border {
+                border-bottom: 2px solid #3A3F50;
+            }
+
+            &.bot {
+                height: 100%;
+            }
+
+            .titre {
+                height: 100%;
+                width: 25%;
+                border-right: 2px solid #3A3F50;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-left: 15px;
+
+                p {
+                    font-size: 14px;
+                }
+
+                h2 {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                h4 {
+                    font-size: 14px;
+                }
+            }
+
+            .skill {
+                margin-left: 50px;
+                font-size: 18px;
+                font-weight: bold;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 15px;
+                width: 75%;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+#second {
+    margin-top: 150px;
+
+    a {
+        text-decoration: underline;
+        pointer-events: all !important;
+        font-weight: bold;
+    }
+
+    .article {
+        width: 100% !important;
+    }
+}

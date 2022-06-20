@@ -1,0 +1,162 @@
+main {
+  border-bottom: 0;
+}
+
+main .title {
+  background-image: url("./images/project-corse.jpg") !important;
+}
+
+main .intro {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+main .intro .container {
+  height: 100%;
+  width: 100%;
+}
+
+main .intro .see {
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+  background-color: #3A3F50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main .intro h2 {
+  font-size: 24px;
+  color: #3A3F50;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main .intro h4 {
+  font-size: 18px;
+  color: #3a3f507a;
+}
+
+main .intro .info {
+  margin-top: 50px;
+  width: 60%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .intro .info h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3A3F50;
+}
+
+main .intro .info .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .intro .info .row .element {
+  width: 33%;
+}
+
+main .presentation-projet {
+  margin-top: 150px;
+  padding: 50px 0;
+  font-size: 18px;
+  border-top: 2px solid #3A3F50;
+  border-bottom: 2px solid #3A3F50;
+}
+
+#highlight {
+  margin-bottom: 200px;
+}
+
+#highlight::before {
+  content: "";
+  height: 215vh;
+  left: calc(50% - 3px);
+  width: 2px;
+  z-index: -1;
+  background-color: #3A3F50;
+  position: absolute;
+}
+
+#highlight img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#highlight .big {
+  margin-top: 150px;
+  width: 100%;
+  height: 800px;
+  margin-bottom: 100px;
+}
+
+#highlight .thin {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 350px;
+}
+
+#highlight .double {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#highlight .double img {
+  width: 45%;
+}
+
+#highlight p {
+  width: 70%;
+}
+
+#third-part {
+  padding-top: 50px;
+}
+/*# sourceMappingURL=projet.css.map */
