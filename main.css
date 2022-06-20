@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 html::-webkit-scrollbar {
@@ -478,7 +479,7 @@ main .skill-container .skill {
 }
 
 .trait {
-  width: 1920px;
+  width: 100%;
   overflow: hidden;
   position: absolute;
   left: 0;

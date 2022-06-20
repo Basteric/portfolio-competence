@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100vw;
 }
 
 html::-webkit-scrollbar {
@@ -74,6 +75,7 @@ body {
     font-family: 'Faune', sans-serif;
     color: #3A3F50;
     overflow-x: hidden;
+    
 }
 
 p {
@@ -381,7 +383,7 @@ main {
 }
 
 .trait {
-    width: 1920px;
+    width: 100%;
     overflow: hidden;
     position: absolute;
     left: 0;

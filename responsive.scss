@@ -338,6 +338,12 @@
 
 
 @media only screen and (max-width : 480px) {
+
+
+    html {
+        width: 100vw;
+        overflow-x: hidden;
+    }
     nav {
         .dn {
             display: none;
