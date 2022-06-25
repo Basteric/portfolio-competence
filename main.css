@@ -16,7 +16,6 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100vw;
 }
 
 html::-webkit-scrollbar {
@@ -429,6 +428,11 @@ main .skill-container .skill {
   gap: 70px;
   margin-bottom: 80px;
   margin-top: 50px;
+  overflow-x: hidden;
+}
+
+#third-part .project-container::-webkit-scrollbar {
+  display: none;
 }
 
 #third-part .project-container .project {

@@ -22,20 +22,19 @@ main .parcours .post-bac,
 main .parcours .bac {
   border-radius: 5px;
   border: 2px solid #3A3F50;
-  width: 100%;
-  height: 250px;
   margin-bottom: 50px;
-}
-
-main .parcours .post-bac.bac,
-main .parcours .bac.bac {
-  height: 125px;
-  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .parcours .post-bac .experience,
 main .parcours .bac .experience {
-  height: 50%;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,11 +46,6 @@ main .parcours .bac .experience {
 main .parcours .post-bac .experience.border,
 main .parcours .bac .experience.border {
   border-bottom: 2px solid #3A3F50;
-}
-
-main .parcours .post-bac .experience.bot,
-main .parcours .bac .experience.bot {
-  height: 100%;
 }
 
 main .parcours .post-bac .experience .titre,
@@ -139,28 +133,18 @@ main .parcours .bac .experience .skill span {
 
 #second .bac {
   border-radius: 5px;
-  border: 2px solid #3A3F50;
-  width: 100%;
-  height: 125px;
   margin-bottom: 25px;
+  border: 2px solid #3A3F50;
 }
 
 #second .bac .experience {
-  height: 50%;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#second .bac .experience.border {
-  border-bottom: 2px solid #3A3F50;
-}
-
-#second .bac .experience.bot {
-  height: 100%;
 }
 
 #second .bac .experience .titre {

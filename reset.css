@@ -35,6 +35,7 @@ a {
 	outline: none;
 	text-decoration: none;
 	color: #3A3F50;
+	pointer-events: all !important;
 }
 
 h1, h2, h3, p {

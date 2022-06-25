@@ -3,6 +3,7 @@
     src: url("/font/Maragsâ.otf");
 }
 
+
 ::selection {
     color: #133552;
     background: #5abce977;
@@ -11,7 +12,6 @@
 
 html {
     scroll-behavior: smooth;
-    width: 100vw;
 }
 
 html::-webkit-scrollbar {
@@ -338,6 +338,10 @@ main {
         gap: 70px;
         margin-bottom: 80px;
         margin-top: 50px;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            display: none; }
 
         .project {
             height: 650px;

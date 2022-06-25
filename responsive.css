@@ -31,12 +31,16 @@
 }
 
 @media only screen and (max-width: 1280px) {
+  html,
+  body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
   .trace {
     display: none;
   }
   main {
     margin-top: 40px;
-    border-bottom: 1px solid #3A3F50;
   }
   main .fold-container {
     width: 100%;
@@ -226,6 +230,102 @@
 }
 
 @media only screen and (max-width: 750px) {
+  main {
+    border-bottom: 20px !important;
+  }
+  main .parcours .post-bac .experience,
+  main .parcours .bac .experience {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: initial;
+    margin-top: 10px;
+  }
+  main .parcours .post-bac .experience .skill,
+  main .parcours .bac .experience .skill {
+    padding-top: 10px;
+  }
+  main .parcours .post-bac .experience .titre,
+  main .parcours .bac .experience .titre {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #3A3F50;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  main .parcours .post-bac .experience .titre p,
+  main .parcours .bac .experience .titre p {
+    font-size: 12px !important;
+  }
+  main .parcours .post-bac .experience .titre h2,
+  main .parcours .bac .experience .titre h2 {
+    font-size: 16px;
+  }
+  main .parcours .post-bac .experience .skill,
+  main .parcours .bac .experience .skill {
+    margin: 0;
+    font-size: 16px;
+  }
+  main .parcours .post-bac .experience .skill span,
+  main .parcours .bac .experience .skill span {
+    font-size: 14px;
+  }
+  #second {
+    overflow-x: hidden;
+  }
+  #second .text-container p {
+    width: 100%;
+  }
+  #second .text-container h2 {
+    font-size: 40px;
+  }
+  #second .text-container h2::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #3A3F50;
+    position: absolute;
+  }
+  #second .bac .experience {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: initial;
+  }
+  #second .bac .experience .skill {
+    padding-top: 10px;
+  }
+  #second .bac .experience .titre {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #3A3F50;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  #second .bac .experience .titre p {
+    font-size: 12px !important;
+  }
+  #second .bac .experience .titre h2 {
+    font-size: 16px;
+  }
+  #second .bac .experience .skill {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+  }
+  #second .bac .experience .skill span {
+    display: none;
+  }
   .cursor {
     display: none;
   }
@@ -249,11 +349,27 @@
     padding: 50px 0;
   }
   #third-part .project-container {
-    gap: 3%;
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x proximity;
+        scroll-snap-type: x proximity;
+    width: 100vw;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-right: 20px;
   }
   #third-part .project-container .project {
     height: 450px;
-    width: 33%;
+    width: 85vw;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    margin-right: 15px;
+  }
+  #third-part .project-container .third {
+    margin-right: 10%;
   }
   #third-part .project-container .new {
     height: 450px;
@@ -275,9 +391,10 @@
 }
 
 @media only screen and (max-width: 480px) {
-  html {
-    width: 100vw;
-    overflow-x: hidden;
+  html,
+  body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
   }
   nav .dn {
     display: none;
@@ -334,6 +451,9 @@
   .progress-bar h4 {
     font-size: 16px !important;
     margin-left: 10px !important;
+  }
+  #second .text-container {
+    margin-top: 100px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
