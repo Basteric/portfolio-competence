@@ -14,10 +14,11 @@ main .intro {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .intro .container {
@@ -64,17 +65,14 @@ main .intro h4 {
 main .intro .info {
   margin-top: 50px;
   width: 60%;
-  height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  min-height: 150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 40px;
 }
 
 main .intro .info h4 {
@@ -83,18 +81,11 @@ main .intro .info h4 {
   color: #3A3F50;
 }
 
-main .intro .info .row {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main .intro .info .row .element {
-  width: 33%;
+main .intro .info .element {
+  margin: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 main .presentation-projet {
@@ -158,5 +149,53 @@ main .presentation-projet {
 
 #third-part {
   padding-top: 50px;
+}
+
+@media only screen and (max-width: 960px) {
+  main .intro .info {
+    margin-top: 50px;
+    width: 80%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 40px;
+  }
+  main .intro .see {
+    height: 100px;
+    width: 100px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main .intro .info {
+    margin-top: 50px;
+    width: 80%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 40px;
+    margin-bottom: 50px;
+  }
+  main .intro .container {
+    width: 100%;
+  }
+  main .intro .see {
+    border-radius: 10px;
+    background-color: #3A3F50;
+    height: 50px;
+    width: 100%;
+    font-size: 12px;
+    position: initial;
+  }
+  main .presentation-projet {
+    margin-top: 100px;
+    padding: 20px 0;
+  }
+  main .presentation-projet p {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=projet.css.map */
