@@ -30,6 +30,50 @@ html::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0);
 }
 
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3A3F50;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.underline:hover:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+img {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .button {
   -webkit-transition: color .1s linear, background .15s linear, -webkit-transform .1s linear;
   transition: color .1s linear, background .15s linear, -webkit-transform .1s linear;
@@ -112,7 +156,7 @@ nav {
 
 nav a {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   margin-right: 25px;
 }
 
@@ -135,6 +179,10 @@ nav .contact {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+nav .active {
+  font-weight: bold !important;
 }
 
 main {

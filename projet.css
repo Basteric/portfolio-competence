@@ -3,7 +3,7 @@ main {
 }
 
 main .title {
-  background-image: url("./images/project-corse.jpg") !important;
+  background-image: url("./images/cover.jpg") !important;
 }
 
 main .intro {
@@ -113,6 +113,7 @@ main .presentation-projet {
 #highlight img {
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
 }
 
 #highlight .big {
@@ -143,12 +144,14 @@ main .presentation-projet {
   width: 45%;
 }
 
-#highlight p {
-  width: 70%;
-}
-
 #third-part {
   padding-top: 50px;
+}
+
+@media only screen and (max-width: 1050px) {
+  #highlight::before {
+    height: 200vh;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -166,9 +169,15 @@ main .presentation-projet {
     width: 100px;
     font-size: 12px;
   }
+  #highlight::before {
+    height: 180vh;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  main .intro h2 {
+    font-size: 21px;
+  }
   main .intro .info {
     margin-top: 50px;
     width: 80%;
@@ -176,7 +185,7 @@ main .presentation-projet {
         grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (1fr)[6];
         grid-template-rows: repeat(6, 1fr);
-    grid-row-gap: 40px;
+    grid-row-gap: 30px;
     margin-bottom: 50px;
   }
   main .intro .container {
@@ -187,7 +196,7 @@ main .presentation-projet {
     background-color: #3A3F50;
     height: 50px;
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
     position: initial;
   }
   main .presentation-projet {
@@ -196,6 +205,18 @@ main .presentation-projet {
   }
   main .presentation-projet p {
     font-size: 14px;
+  }
+  #highlight .double img {
+    height: 500px;
+  }
+  #highlight::before {
+    height: 150vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #highlight::before {
+    height: 150vh;
   }
 }
 /*# sourceMappingURL=projet.css.map */

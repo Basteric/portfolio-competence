@@ -268,7 +268,7 @@
 
 @media only screen and (max-width : 750px) {
 
-    
+
 
     main {
         border-bottom: 20px !important;
@@ -498,6 +498,10 @@
 
         .title {
             margin-bottom: 25px;
+
+            h2 {
+                font-size: 24px;
+            }
         }
 
         .fold-container {
@@ -508,6 +512,18 @@
                     padding: 15px 0;
                 }
             }
+
+                .skill-container {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: 1fr;
+                    gap: 30px;
+
+                    .skill {
+                        border-radius: 5px;
+                    }
+                }
+            
         }
     }
 

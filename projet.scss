@@ -2,7 +2,7 @@ main {
     border-bottom: 0;
 
     .title {
-        background-image: url('./images/project-corse.jpg') !important;
+        background-image: url('./images/cover.jpg') !important;
     }
 
     .intro {
@@ -94,6 +94,7 @@ main {
 
     img {
         object-fit: cover;
+        border-radius: 5px;
     }
 
     .big {
@@ -119,14 +120,16 @@ main {
             width: 45%;
         }
     }
-
-    p {
-        width: 70%;
-    }
 }
 
 #third-part {
     padding-top: 50px;
+}
+
+@media only screen and (max-width : 1050px) { 
+    #highlight::before {
+        height: 200vh;
+    }
 }
 
 @media only screen and (max-width : 960px) {
@@ -148,18 +151,26 @@ main {
             }
         }
     }
+
+    #highlight::before {
+        height: 180vh;
+    }
 }
 
 @media only screen and (max-width : 480px) {
     main {
         .intro {
+
+            h2 {
+                font-size: 21px;
+            }
             .info {
                 margin-top: 50px;
                 width: 80%;
                 grid-template-columns: repeat(1, 1fr);
                 grid-template-rows: repeat(6, 1fr);
                 // grid-column-gap: 20px;
-                grid-row-gap: 40px;
+                grid-row-gap: 30px;
                 margin-bottom: 50px;
             }
 
@@ -172,7 +183,7 @@ main {
                 background-color: #3A3F50;
                 height: 50px;
                 width: 100%;
-                font-size: 12px;
+                font-size: 14px;
                 position: initial;
             }
         }
@@ -185,5 +196,23 @@ main {
                 font-size: 14px;
             }
         }
+    }
+
+    #highlight {
+        .double {
+            img {
+                height: 500px;
+            };
+        }
+    }
+
+    #highlight::before {
+        height: 150vh;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+    #highlight::before {
+        height: 150vh;
     }
 }
