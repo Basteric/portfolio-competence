@@ -2,12 +2,17 @@ main {
     border-bottom: 0;
 
     .title {
-        background-image: url('./images/cover.jpg') !important;
+        background-image: url('./images/project-corse.jpg') !important;
     }
 
     .pd {
         background-image: url('./images/projet-democratia.jpg') !important;
         background-position: 25% 5%;
+    }
+
+    .lifest {
+        background-image: url('./images/lifest-cover.jpg') !important;
+       
     }
 
     .intro {
@@ -84,15 +89,7 @@ main {
     }
 }
 
-.hl2::before {
-    content: "";
-    height: 400vh;
-    left: calc(50% - 3px);
-    width: 2px;
-    z-index: -1;
-    background-color: #3A3F50;
-    position: absolute;
-}
+
 
 #highlight {
     margin-bottom: 200px;
@@ -141,9 +138,58 @@ main {
     padding-top: 50px;
 }
 
+.hl2 {
+    margin-bottom: 200px;
+
+    &::before {
+        content: "";
+        height: 400vh;
+        left: calc(50% - 3px);
+        width: 2px;
+        z-index: -1;
+        background-color: #3A3F50;
+        position: absolute;
+    }
+
+    img {
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .big {
+        margin-top: 150px;
+        width: 100%;
+        max-height: 800px;
+        margin-bottom: 100px;
+    }
+
+    .thin {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 100%;
+        height: 350px;
+    }
+
+    .double {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        img {
+            width: 45%;
+        }
+    }
+}
+
+
+
 @media only screen and (max-width : 1050px) {
     #highlight::before {
         height: 200vh;
+    }
+
+    .hl2::before {
+        height: 320vh;
     }
 }
 
@@ -168,7 +214,25 @@ main {
     }
 
     #highlight::before {
-        height: 180vh;
+        height: 0;
+    }
+
+    #highlight, .hl2 {
+        .double {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: space-between;
+            gap: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .hl2::before {
+        height: 0;
     }
 }
 
@@ -214,7 +278,7 @@ main {
         }
     }
 
-    #highlight {
+    #highlight, .hl2 {
         .double {
             img {
                 height: 500px;
@@ -231,10 +295,24 @@ main {
 
 @media only screen and (max-width : 450px) {
     #highlight::before {
-        height: 150vh;
+        height: 0;
     }
 
-    #highlight {
+    .hl2::before {
+        height: 0;
+    }
+
+    #highlight, .hl2 {
+        margin-top: 50px;
+        .big {
+            margin: 0;
+            margin: 10px 0;
+        }
+
+        .thin {
+            margin: 20px 0;
+        }
+
         .double {
             display: flex;
             flex-direction: column;
